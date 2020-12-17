@@ -1,0 +1,111 @@
+.home-header {
+    color: $pink-color;
+} 
+
+
+.carousel {
+	.carousel-item { transition: opacity 1s ease-in-out;
+}
+li {
+	transition: opacity 1s ease;
+}}
+
+@include media-breakpoint-between(xs, sm) {     
+    .carousel {
+        .carousel-item {
+            height: 300px;
+                img {
+                    position: absolute;
+                    object-fit:cover;
+                    top: 0;
+                    left: 0;
+                    min-height: 300px;
+            }
+        }
+    } 
+}
+
+@include media-breakpoint-up(md) { 
+    .carousel {
+        .carousel-item {
+            height: 350px;
+                img {
+                    position: absolute;
+                    object-fit:cover;
+                    top: 0;
+                    left: 0;
+                    min-height: 350px;
+            }
+        }
+    } 
+}
+
+@include media-breakpoint-up(lg) { 
+    .carousel {
+        .carousel-item {
+            height: 400px;
+                img {
+                    position: absolute;
+                    object-fit:cover;
+                    top: 0;
+                    left: 0;
+                    min-height: 400px;
+            }
+        }
+    } 
+}
+
+@include media-breakpoint-up(xl) { 
+    .carousel {
+        .carousel-item {
+            height: 450px;
+                img {
+                    position: absolute;
+                    object-fit:cover;
+                    top: 0;
+                    left: 0;
+                    min-height: 450px;
+            }
+        }
+    } 
+}
+
+.home-accordion {
+    box-shadow: $box-shadow;
+
+    &__header {
+        color: $pink-color;
+        background: $white-color;
+        font-size: 19px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 2px solid $pink-color;
+    }
+    img {
+        width:280px;
+    }
+}
+
+
+.home-tab{
+    a {
+        color: $pink-color;
+    }
+    &__body {
+        display: flex;
+        background: $white-color;
+        padding: 50px;
+        border-radius: 0px 15px 15px 15px;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;    
+    }
+    &__content {
+        margin-left: 25px;
+    }
+}

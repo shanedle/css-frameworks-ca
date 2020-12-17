@@ -1,0 +1,41 @@
+.news-header {
+    color: $pink-color;
+} 
+
+.news-card {
+    &__button {
+        background: $pink-color;
+        border: 1px solid $pink-color;
+        border-right: 32px solid $darkgrey-color;
+        text-transform: uppercase;
+        &:hover {
+            background: $darkgrey-color;
+            color: $white-color;
+            border: 1px solid $darkgrey-color;
+            border-right: 32px solid $pink-color;
+        }  
+    }
+}
+
+.page-link {
+	color: $pink-color;
+	background-color: $white-color;
+	border: 1px solid $pink-color;
+	&:focus {
+		color: $white-color;
+		background-color: $white-color;
+		border-color: $pink-color;
+	}
+	&:hover {
+		color: $white-color;
+		background-color: $pink-color;
+		border-color: $pink-color;
+	}
+}
+.page-item.active {
+	.page-link {
+		color: $white-color;
+		background-color: $pink-color;
+		border-color: $pink-color;
+	}
+}

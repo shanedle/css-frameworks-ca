@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap');
+
+$primary-font: 'Playfair Display', serif;
+$secondary-font: 'Lato', sans-serif;
+
+body {
+    background: $white-color;
+    background: radial-gradient(circle, $white-color 0%, $bg-color 100%); 
+    padding: 0; 
+    margin: 0;
+    font-family: $secondary-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-font;
+}
+
+p {
+    color: $darkgrey-color;
+}
+
+.page-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.content-wrap {
+	flex: 1;
+}
+
+.footer {
+	color: $darkgrey-color;
+	background-color: $white-color;
+	padding-top: 1em;
+	position: relative;
+	width: 100%;
+	bottom: 0;
+}

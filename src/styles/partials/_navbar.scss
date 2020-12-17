@@ -1,0 +1,41 @@
+.navigationbar {
+    background-color: $lightgrey-color;
+
+    &__brand {
+        color: $pink-color !important;
+        font-family: $primary-font;
+        font-size: 700;
+        font-style: italic;
+    }
+
+    &__toggle {
+        border:none;
+    }
+    &__link {
+        font-size: 16px;
+        padding: 4px 23px;
+        color: $black-color;
+        margin: 0 15px 0 0;
+        vertical-align: baseline;
+
+        &:hover {
+            background-color: $white;
+            color: $black-color;
+            text-decoration: none;
+        }
+    }
+
+    &__link.active {
+        background: $white;
+    }
+    
+    &__searchbutton {
+        background-color: $pink-color;
+        color: $white;
+        border: none;
+        &:hover {
+            background-color: #ba1d54;
+            color: $white;
+        }
+    }
+}

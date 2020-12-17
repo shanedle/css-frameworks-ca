@@ -1,0 +1,33 @@
+.contact-header {
+    color: $pink-color;
+}   
+
+.contact-form {
+    background: $lightgrey-color;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: $darkgrey-color;
+    padding: 1.5rem;
+
+    &__input {
+        background: $grey-color;
+        color: $white-color;
+    }
+    
+    &__button {
+        background: $darkgrey-color;
+        border: 1px solid $darkgrey-color;
+
+        &:hover {
+            background: $white-color;
+            color: $darkgrey-color;
+            border: 1px solid $darkgrey-color;
+        }
+    }
+}       
+
+.error {
+    color: red;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
